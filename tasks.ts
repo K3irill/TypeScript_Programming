@@ -39,3 +39,5 @@ const check_2 = c2.substr(0);
 const check_3: boolean = c3[0];
 const check_4 = c3[1] + 5;
 const check_5 = c4.push("lalaka");
+
+//
