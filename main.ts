@@ -63,7 +63,7 @@ let receipt: ReceiptType = {
 	},
 	position2: {
 		price: 215,
-		title: 'coffe & one bagel',
+		title: 'coffee & one bagel',
 		isReady: true,
 	},
 }
