@@ -26,3 +26,14 @@ function log(): void {
 function error(message: string): never {
   throw new Error(message);
 }
+
+//rest
+function foooo(...rest: number[]) {
+}
+//this
+function foo3(this: number, b: number): number {
+    const c: number = this + b;
+    return c
+}
+
+foo3.call(10, 5);
