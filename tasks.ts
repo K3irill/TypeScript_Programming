@@ -45,3 +45,74 @@ const check_4 = c3[1] + 5
 const check_5 = c4.push('lalaka')
 
 //
+
+export const digitize = (n: number): number[] => {
+	return String(123)
+		.split('')
+		.reverse()
+		.map(function (num) {
+			return Number(num)
+		})
+}
+
+export function basicOp(
+	operation: string,
+	value1: number,
+	value2: number
+): number {
+	let result: number = 0
+	switch (operation) {
+		case '+':
+			result = value1 + value2
+			break
+		case '-':
+			result = value1 - value2
+			break
+		case '*':
+			result = value1 * value2
+			break
+		case '/':
+			result = value1 / value2
+			break
+	}
+	return result
+}
+console.log(basicOp('+', 4, 7))
+
+export function grow(arr: number[]): number {
+	return arr.length > 0 ? arr.reduce((acc, num) => acc * num) : 0
+}
+console.log(grow([1, 2, 3, 4]))
+
+function countRepeats(str: string): number {
+	let count = 0
+	for (let i = 1; i < str.length; i++) {
+		if (str[i] === str[i - 1]) {
+			count++
+		}
+	}
+	return count
+}
+
+function fill(
+	arr: [undefined, number],
+	method: number = 1
+): [undefined, number] {
+	const n = arr.length
+	if (method == 1) {
+		for (let i = n - 2; i >= 0; i--) {
+			if (arr[i] === undefined) {
+				arr[i] = arr[i + 1]
+			}
+			console.log('ojk')
+		}
+	} else {
+		for (let i = 1; i < n; i++) {
+			if (arr[i] === undefined) {
+				arr[i] = arr[i - 1]
+			}
+		}
+	}
+
+	return arr
+}

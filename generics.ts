@@ -7,7 +7,6 @@ class Carr {
 class Dog {
 	public hasFourLegs: boolean = true
 }
-
 class Robot {
 	public bipbop: boolean = true
 }
@@ -21,10 +20,13 @@ class Camera<T> {
 const human = new Human()
 const carr = new Car()
 const dog = new Dog()
+const robot = new Robot()
 
+const camera = new Camera<Car | Human | Robot >()
 const camera1 = new Camera<Human>()
 const camera2 = new Camera<Carr>()
-
+const camera3 = new Camera<Robot>()
+const camera4 = new Camera<Dog>()
 //
 
 class TypeChecker<T> {
