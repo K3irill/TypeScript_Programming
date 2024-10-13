@@ -104,7 +104,6 @@ function fill(
 			if (arr[i] === undefined) {
 				arr[i] = arr[i + 1]
 			}
-			console.log('ojk')
 		}
 	} else {
 		for (let i = 1; i < n; i++) {

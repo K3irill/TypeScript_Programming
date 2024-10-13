@@ -94,7 +94,6 @@ function fill(arr, method) {
             if (arr[i] === undefined) {
                 arr[i] = arr[i + 1];
             }
-            console.log('ojk');
         }
     }
     else {
